@@ -1,0 +1,12 @@
+# Production
+/build
+
+# OS
+.DS_Store
+
+# API keys and secrets
+.env
+!.env.example
+
+# Node
+node_modules

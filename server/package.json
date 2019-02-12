@@ -1,0 +1,22 @@
+{
+  "name": "simple-ts-node",
+  "version": "1.0.0",
+  "description": "Simplest possible Node-Typescript starter",
+  "main": "server.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "npm run build && node ./build/server.js"
+  },
+  "author": "Nigel",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "@types/node": "^10.12.24",
+    "axios": "^0.18.0",
+    "fastify": "^1.14.1"
+  }
+}
