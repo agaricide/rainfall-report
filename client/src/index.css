@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 code {
@@ -13,10 +14,10 @@ code {
     monospace;
 }
 
-.background {
+#background {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
+  right: -5%;
+  bottom: -5%;
+  min-height: 110%;
+  min-width: 110%;
 }
