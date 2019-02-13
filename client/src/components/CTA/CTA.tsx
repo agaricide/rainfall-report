@@ -11,7 +11,7 @@ const CTA: FunctionComponent<Props> = (props: Props) => {
   };
 
   return (
-    <button onClick={props.onClick()}>Get nearest sensor</button>
+    <button onClick={() => props.onClick()}>Get nearest sensor</button>
   );
 };
 

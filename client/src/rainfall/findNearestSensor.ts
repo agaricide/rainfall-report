@@ -1,6 +1,6 @@
 import { SensorData } from './types';
 
-export function findNearestSensor(coords: { latitude: number, longitude: number }, sensors: SensorData[]) {
+export function findNearestSensor(coords: Coordinates, sensors: SensorData[]) {
     const nearest = { sensor: sensors[0], distance: Infinity };
 
     sensors.forEach(sensor => {
@@ -13,5 +13,5 @@ export function findNearestSensor(coords: { latitude: number, longitude: number 
       }
     });
 
-    return nearest;
+    return nearest.sensor;
 }

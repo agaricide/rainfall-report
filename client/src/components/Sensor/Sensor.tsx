@@ -3,9 +3,7 @@ import { SensorData, RainfallInterval } from '../../rainfall/types';
 import Interval from './Interval';
 import './Sensor.css';
 
-type Nullable<T> = T | null;
-
-const Sensor: FunctionComponent<Nullable<SensorData>> = (props: SensorData) => {
+const Sensor = (props: SensorData) => {
   const [interval, setInterval] = useState<RainfallInterval>('sevenDays');
 
   const handleSetInterval = (interval: RainfallInterval) => {
