@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState } from 'react';
+import React, { useState } from 'react';
 import { SensorData, RainfallInterval } from '../../rainfall/types';
 import Interval from './Interval';
 import './Sensor.css';
@@ -6,26 +6,20 @@ import './Sensor.css';
 const Sensor = (props: SensorData) => {
   const [interval, setInterval] = useState<RainfallInterval>('sevenDays');
 
-  const handleSetInterval = (interval: RainfallInterval) => {
-    return () => {
-      setInterval(interval);
-    };
-  };
-
   return (
     <div className='report'>
       <div className='location'>
         {props.name}
       </div>
       <div className='rainfall'>
-        {props[interval] || '0.0'}<span className='units'> in</span>
+        {props[interval]}<span className='units'> in</span>
       </div>
       <ul className='intervals'>
-        <Interval interval='sixHours' onClick={handleSetInterval}/>
-        <Interval interval='oneDay' onClick={handleSetInterval}/>
-        <Interval interval='sevenDays' onClick={handleSetInterval}/>
-        <Interval interval='thirtyDays' onClick={handleSetInterval}/>
-        <Interval interval='pastYear' onClick={handleSetInterval}/>
+        <Interval interval='sixHours' onClick={setInterval}/>
+        <Interval interval='oneDay' onClick={setInterval}/>
+        <Interval interval='sevenDays' onClick={setInterval}/>
+        <Interval interval='thirtyDays' onClick={setInterval}/>
+        <Interval interval='pastYear' onClick={setInterval}/>
       </ul>
     </div>
   );

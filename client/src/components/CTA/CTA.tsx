@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from 'react';
 
-interface Props {
+interface CTAProps {
     onClick: Function;
 }
 
-const CTA: FunctionComponent<Props> = (props: Props) => {
+const CTA = (props: CTAProps) => {
 
   const handleClick = () => {
     console.log('CTA click!');
