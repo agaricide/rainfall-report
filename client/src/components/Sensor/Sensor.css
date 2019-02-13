@@ -1,0 +1,32 @@
+.location {
+    font-size: 24px;
+}
+  
+.rainfall {
+    font-size: 132px;
+    line-height: 88px;
+    font-weight: bold;
+    padding: 20px;
+}
+  
+.units {
+    font-size: 97px;
+}
+  
+ul.intervals {
+    margin: 0;
+    font-size: 24px;
+    list-style: none;
+    font-weight: bold;
+}
+  
+ul.intervals li {
+    display: inline;
+    padding-right: 24px;
+    cursor: pointer;
+}
+  
+ul.intervals li.selected {
+    color: white;
+    text-decoration: underline;
+}

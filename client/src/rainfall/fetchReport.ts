@@ -1,6 +1,11 @@
 import axios from 'axios';
+import { SensorData, toSensors } from './types';
 
-export async function fetchRainfallReport() {
+type Callback = (sensors: SensorData[]) => void;
+
+export async function fetchRainfallReport(callback?: Callback): Promise<SensorData[]> {
     const result = await axios('report');
-    return result.data;
+    const sensors = toSensors(result.data);
+    if (callback) callback(sensors);
+    return sensors;
 }
