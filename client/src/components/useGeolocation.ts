@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 
+const getCurrentPosition = () => new Promise((resolve, reject) => {
+  navigator.geolocation.getCurrentPosition(resolve, reject);
+});
+
 type PositionHook = [Position, () => Promise<Position>];
 
 const useGeolocation = (): PositionHook => {
@@ -16,7 +20,9 @@ const useGeolocation = (): PositionHook => {
     timestamp: 0
   });
 
-  const handleSuccess = (p: any) => {
+  // Must manually copy each propety– Position is read-only for privacy
+  // reasons, therefore it breaks Object.assign and Spread Operator.
+  const copyPosition = (p: Position) => {
     setPosition({
       coords: {
         accuracy: p.coords.accuracy,
@@ -29,16 +35,12 @@ const useGeolocation = (): PositionHook => {
       },
       timestamp: p.timestamp
     });
-
-    return Promise.resolve(position);
   };
 
-  const getCurrentPosition = () => new Promise((resolve, reject) => {
-    navigator.geolocation.getCurrentPosition(resolve, reject);
-  });
-
-  const getPosition = () => {
-    return getCurrentPosition().then(handleSuccess);
+  const getPosition = async () => {
+    const current = await getCurrentPosition() as Position;
+    copyPosition(current);
+    return position;
   };
 
   return [position, getPosition];
