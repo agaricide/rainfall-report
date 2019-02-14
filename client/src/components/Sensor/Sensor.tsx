@@ -3,6 +3,8 @@ import { SensorData, RainfallInterval } from '../../rainfall/types';
 import Interval from './Interval';
 import './Sensor.css';
 
+const intervals: RainfallInterval[] = ['sixHours', 'oneDay', 'sevenDays', 'thirtyDays', 'pastYear'];
+
 const Sensor = (props: SensorData) => {
   const [interval, setInterval] = useState<RainfallInterval>('sevenDays');
 
@@ -15,11 +17,7 @@ const Sensor = (props: SensorData) => {
         {props[interval]}<span className='units'> in</span>
       </div>
       <ul className='intervals'>
-        <Interval interval='sixHours' onClick={setInterval}/>
-        <Interval interval='oneDay' onClick={setInterval}/>
-        <Interval interval='sevenDays' onClick={setInterval}/>
-        <Interval interval='thirtyDays' onClick={setInterval}/>
-        <Interval interval='pastYear' onClick={setInterval}/>
+        {intervals.map(i => <Interval interval={i} onClick={setInterval}/>)}
       </ul>
     </div>
   );
