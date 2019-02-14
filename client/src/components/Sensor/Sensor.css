@@ -1,32 +1,60 @@
 .location {
     font-size: 24px;
+    font-family: 'Source Code Pro', monospace;
+    letter-spacing: -.2px;
+    z-index: 1000;
 }
   
 .rainfall {
-    font-size: 132px;
+    font-family: 'Roboto';
+    font-size: 158px;
     line-height: 88px;
+    padding: 36px 0 24px;
     font-weight: bold;
-    padding: 20px;
+    z-index: 0;
+    user-select: none;
+    pointer-events: none;
+}
+
+.point {
+    font-size: 20px;
+    padding-right: 12px;
+    cursor: pointer;
 }
   
 .units {
-    font-size: 97px;
+    margin-left: -16px;
+    font-family: 'Nidus Sans';
+    font-size: 90px;
 }
   
 ul.intervals {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
     margin: 0;
-    font-size: 24px;
     list-style: none;
-    font-weight: bold;
+}
+
+ul.intervals.wide {
+    letter-spacing: 2px;
 }
   
 ul.intervals li {
+    font-size: 28px;
     display: inline;
     padding-right: 24px;
     cursor: pointer;
 }
+
+ul.intervals li.heavy {
+    font-size: 24px;
+    font-weight: 700;
+}
   
-ul.intervals li.selected {
-    color: white;
+ul.intervals li:hover {
     text-decoration: underline;
+}
+
+ul.intervals li:active {
+    color: #ECEFF1;
 }
