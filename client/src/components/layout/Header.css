@@ -1,0 +1,29 @@
+.header {
+    position: fixed;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    /* background-color: #fff;
+    opacity: .1; */
+    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 24px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+ul.views {
+    font-size: 18px;
+    margin: 0;
+    list-style: none;
+}
+  
+ul.views li {
+    display: inline;
+    padding-right: 12px;
+    cursor: pointer;
+}
