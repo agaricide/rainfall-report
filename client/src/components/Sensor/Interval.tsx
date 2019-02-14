@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState } from 'react';
+import React from 'react';
 import { RainfallInterval } from '../../rainfall/types';
 import { startCase } from 'lodash';
 
