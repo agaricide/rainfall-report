@@ -1,4 +1,4 @@
-const scalar = 1 / 125;
+const scalar = 1 / 175;
 
 export function addEffect(el: HTMLElement | null): void {
   if (!el) throw('No element specifed.');
