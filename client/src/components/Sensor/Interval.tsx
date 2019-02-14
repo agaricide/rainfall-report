@@ -5,14 +5,13 @@ import { startCase } from 'lodash';
 interface IntervalProps {
   onClick: Function;
   interval: RainfallInterval;
+  display: string;
 }
-
-const format = (s: string) => startCase(s).toLowerCase();
 
 const Interval = (props: IntervalProps) => {
   return (
     <li onClick={() => props.onClick(props.interval)}>
-      {format(props.interval)}
+      {props.display}
     </li>
   );
 };
