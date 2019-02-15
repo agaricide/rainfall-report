@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import ReactJson from 'react-json-view';
 import CTA from './CTA/CTA';
 import Sensor from './Sensor/Sensor';
 import useGeolocation from './useGeolocation';
@@ -9,7 +8,6 @@ import { SensorData } from '../rainfall/types';
 import Header from './Header/Header';
 import About from './About/About';
 import Footer from './Footer/Footer';
-
 import './App.css';
 
 const App = () => {
@@ -27,10 +25,11 @@ const App = () => {
 
   const handleClick = async () => {
     await getPosition();
-    const sensor = findNearestSensor(position.coords, sensors);
-    setNearest(sensor);
     setView('Sensor');
   };
+
+  const sensor = findNearestSensor(position.coords, sensors);
+  if (sensor !== nearest) setNearest(sensor);
 
   const views: { [key: string]: JSX.Element } = {
     Sensor: <Sensor {...nearest}></Sensor>,
