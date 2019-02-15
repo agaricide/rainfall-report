@@ -1,6 +1,5 @@
 import React from 'react';
 import { RainfallInterval } from '../../rainfall/types';
-import { startCase } from 'lodash';
 
 interface IntervalProps {
   onClick: Function;
@@ -8,12 +7,12 @@ interface IntervalProps {
   display: string;
 }
 
-const Interval = (props: IntervalProps) => {
+const Interval = React.memo((props: IntervalProps) => {
   return (
     <li onClick={() => props.onClick(props.interval)}>
       {props.display}
     </li>
   );
-};
+});
 
 export default Interval;

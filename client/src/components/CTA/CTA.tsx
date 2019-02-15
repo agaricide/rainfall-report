@@ -5,7 +5,7 @@ interface CTAProps {
     onClick: Function;
 }
 
-const CTA = (props: CTAProps) => {
+const CTA = React.memo((props: CTAProps) => {
   return (
     <div className='cta'>
       <p>
@@ -14,6 +14,6 @@ const CTA = (props: CTAProps) => {
       <button onClick={() => props.onClick()}>find sensor</button>
     </div>
   );
-};
+});
 
 export default CTA;
