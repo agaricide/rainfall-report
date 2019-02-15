@@ -18,7 +18,7 @@ setInterval(() => {
     fetchRainfallReport();
 }, interval);
 
-server.get('/report', (request, reply) => {
+server.get('/api/report', (request, reply) => {
     // for better reply types, see: https://bit.ly/2E45Rzy
     reply.code(200).send(cached);
 });
