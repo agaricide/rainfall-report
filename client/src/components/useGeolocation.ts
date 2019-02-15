@@ -5,10 +5,6 @@ const defaults: PositionOptions = {
   enableHighAccuracy: true
 };
 
-const getCurrentPosition = (options: PositionOptions = {}) => new Promise((resolve, reject) => {
-  navigator.geolocation.getCurrentPosition(resolve, reject, { ...options, ...defaults });
-});
-
 const useGeolocation = (): [Position, () => Promise<Position>] => {
   const [position, setPosition] = useState<Position>({
     coords: {
@@ -23,26 +19,13 @@ const useGeolocation = (): [Position, () => Promise<Position>] => {
     timestamp: 0
   });
 
-  // Must manually copy each propety– Position is read-only for privacy
-  // reasons, therefore it breaks Object.assign and Spread Operator.
-  const copyPosition = (p: Position) => {
-    setPosition({
-      coords: {
-        accuracy: p.coords.accuracy,
-        altitude: p.coords.altitude,
-        altitudeAccuracy: p.coords.altitudeAccuracy,
-        heading: p.coords.heading,
-        latitude: p.coords.latitude,
-        longitude: p.coords.longitude,
-        speed: p.coords.speed
-      },
-      timestamp: p.timestamp
-    });
-  };
+  const getCurrentPosition = (options: PositionOptions = {}) => new Promise((resolve, reject) => {
+    navigator.geolocation.getCurrentPosition(resolve, reject, { ...options, ...defaults });
+  });
 
   const getPosition = async () => {
     const current = await getCurrentPosition() as Position;
-    copyPosition(current);
+    setPosition(current);
     return position;
   };
 
