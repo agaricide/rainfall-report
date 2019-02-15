@@ -7,7 +7,7 @@ interface HeaderProps {
 
 const Header = React.memo((props: HeaderProps) => {
   return (
-    <div className='header'>
+    <header className='header'>
       <div className='logo' onClick={() => props.goTo('CTA')} >Dallas Rain Report</div>
       <ul className='views'>
         <li onClick={() => props.goTo('CTA')}>
@@ -17,7 +17,7 @@ const Header = React.memo((props: HeaderProps) => {
           About
         </li>
       </ul>
-    </div>
+    </header>
   );
 });
 
