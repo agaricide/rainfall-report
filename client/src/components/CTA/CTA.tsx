@@ -1,4 +1,5 @@
 import React from 'react';
+import './CTA.css';
 
 interface CTAProps {
     onClick: Function;
@@ -6,7 +7,12 @@ interface CTAProps {
 
 const CTA = (props: CTAProps) => {
   return (
-    <button onClick={() => props.onClick()}>Get nearest sensor</button>
+    <div className='cta'>
+      <p>
+        Use <span>gps</span> to find nearest <span>rainfall sensor</span>
+      </p>
+      <button onClick={() => props.onClick()}>find sensor</button>
+    </div>
   );
 };
 
