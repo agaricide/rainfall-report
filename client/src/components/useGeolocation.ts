@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
-const options: PositionOptions = {
-  timeout: 1000 * 60 * 10
+const defaults: PositionOptions = {
+  timeout: 1000 * 60 * 10,
+  enableHighAccuracy: true
 };
 
-const getCurrentPosition = () => new Promise((resolve, reject) => {
-  navigator.geolocation.getCurrentPosition(resolve, reject, options);
+const getCurrentPosition = (options: PositionOptions = {}) => new Promise((resolve, reject) => {
+  navigator.geolocation.getCurrentPosition(resolve, reject, { ...options, ...defaults });
 });
 
 const useGeolocation = (): [Position, () => Promise<Position>] => {
