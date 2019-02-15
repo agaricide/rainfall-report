@@ -8,6 +8,7 @@ import { findNearestSensor } from '../rainfall/findNearestSensor';
 import { SensorData } from '../rainfall/types';
 import Header from './Header/Header';
 import About from './About/About';
+import Footer from './Footer/Footer';
 
 import './App.css';
 
@@ -41,6 +42,7 @@ const App = () => {
     <div className='App'>
       <Header goTo={setView}></Header>
       {views[view]}
+      <Footer coords={position.coords}></Footer>
     </div>
   );
 };
