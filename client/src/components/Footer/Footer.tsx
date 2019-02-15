@@ -7,8 +7,13 @@ interface FooterProps {
 
 const Footer = React.memo((props: FooterProps) => {
   return (
-    <footer className='footer'>
-      {props.coords.latitude.toFixed(5)}, {props.coords.longitude.toFixed(5)}
+    <footer>
+      <span className='coordinate latitude'>
+        {props.coords.latitude || '0.00'}
+      </span>
+      <span className='coordinate latitude'>
+        {props.coords.longitude || '0.00'}
+      </span>
     </footer>
   );
 });
