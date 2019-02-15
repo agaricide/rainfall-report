@@ -6,7 +6,9 @@ import useGeolocation from './useGeolocation';
 import { fetchRainfallReport } from '../rainfall/fetchReport';
 import { findNearestSensor } from '../rainfall/findNearestSensor';
 import { SensorData } from '../rainfall/types';
-import Header from './layout/Header';
+import Header from './Header/Header';
+import About from './About/About';
+
 import './App.css';
 
 const App = () => {
@@ -32,14 +34,13 @@ const App = () => {
   const views: { [key: string]: JSX.Element } = {
     Sensor: <Sensor {...nearest}></Sensor>,
     CTA: <CTA onClick={handleClick}></CTA>,
-    About: <div>About the project, etc.</div>
+    About: <About></About>
   };
 
   return (
     <div className='App'>
-      <Header views={views} goTo={setView}></Header>
+      <Header goTo={setView}></Header>
       {views[view]}
-      <ReactJson src={position} />
     </div>
   );
 };

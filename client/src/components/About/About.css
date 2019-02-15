@@ -1,0 +1,14 @@
+.about {
+    padding: 0 56px 0;
+    text-align: left;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 22px;
+    height: 100%;
+    padding-top: 280px;
+}
+
+.about span {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Nidus Sans';
+}
