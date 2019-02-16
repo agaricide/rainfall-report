@@ -1,3 +1,4 @@
 http://72.181.156.231, http://dallasrain.duckdns.org/, www.dallasrain.report/ {
     root /var/www/dallasrain.duckdns.org/client/build
+    proxy /api localhost:8081
 }
