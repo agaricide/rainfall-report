@@ -17,6 +17,7 @@
   "dependencies": {
     "@types/node": "^10.12.24",
     "axios": "^0.18.0",
-    "fastify": "^1.14.1"
+    "fastify": "^1.14.1",
+    "fastify-helmet": "^3.0.0"
   }
 }
