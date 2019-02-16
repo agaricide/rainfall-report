@@ -40,9 +40,6 @@ const App = () => {
 
   return (
     <div className='App'>
-      {/* <Helmet>
-        <title>Dallas Rain Report</title>
-      </Helmet> */}
       <Header goTo={setView}></Header>
       {views[view]}
       <Footer coords={position.coords}></Footer>
