@@ -1,3 +1,3 @@
-dallasrain.duckns.org {
+http://dallasrain.duckns.org {
     root /var/www/dallasrain.duckdns.org/client/build
 }
