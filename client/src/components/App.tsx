@@ -39,7 +39,7 @@ const App = () => {
   };
 
   return (
-    <div className='App'>
+    <div className='app'>
       <Header goTo={setView}></Header>
       {views[view]}
       <Footer coords={position.coords}></Footer>
