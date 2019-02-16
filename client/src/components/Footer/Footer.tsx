@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css';
 
 interface FooterProps {
-  coords: Coordinates
+  coords: Coordinates;
 }
 
 const Footer = React.memo((props: FooterProps) => {

@@ -12,6 +12,7 @@
   "author": "Nigel",
   "license": "ISC",
   "devDependencies": {
+    "tslint": "^5.12.1",
     "typescript": "^3.0.1"
   },
   "dependencies": {
