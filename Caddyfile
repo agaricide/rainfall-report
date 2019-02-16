@@ -1,4 +1,4 @@
-http://dallasrain.report {
+dallasrain.duckns.org {
     root /var/www/dallasrain.duckdns.org/client/build
     proxy /api localhost:8081
 }
