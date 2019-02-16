@@ -1,5 +1,5 @@
 # Production
-build
+build/
 
 # OS
 .DS_Store
@@ -9,4 +9,4 @@ build
 !.env.example
 
 # Node
-node_modules
+node_modules/
