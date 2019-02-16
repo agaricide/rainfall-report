@@ -10,7 +10,7 @@ const fetchRainfallReport = async () => {
   cached = result.data;
 };
 
-const pollRainfall = () => {
+const pollReport = () => {
   fetchRainfallReport();
   setInterval(() => {
     fetchRainfallReport();
@@ -19,5 +19,5 @@ const pollRainfall = () => {
 
 export {
   cached,
-  pollRainfall
+  pollReport
 }

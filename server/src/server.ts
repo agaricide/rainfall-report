@@ -1,9 +1,9 @@
 import * as fastify from 'fastify';
 import * as helmet from 'fastify-helmet';
 import { IncomingMessage, Server, ServerResponse } from 'http';
-import * as RainfallReport from './pollRainfall';
+import * as RainfallReport from './pollReport';
 
-RainfallReport.pollRainfall();
+RainfallReport.pollReport();
 
 const helmetConfig: helmet.FastifyHelmetOptions = {
   hidePoweredBy: {
