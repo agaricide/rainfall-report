@@ -1,9 +1,9 @@
 import * as fastify from 'fastify';
 import * as helmet from 'fastify-helmet';
 import { IncomingMessage, Server, ServerResponse } from 'http';
-import * as Rainfall from './pollRainfall';
+import * as RainfallReport from './pollRainfall';
 
-Rainfall.pollRainfall();
+RainfallReport.pollRainfall();
 
 const helmetConfig: helmet.FastifyHelmetOptions = {
   hidePoweredBy: {
@@ -16,7 +16,7 @@ const server: fastify.FastifyInstance<Server, IncomingMessage, ServerResponse> =
 server.register(helmet, helmetConfig);
 
 server.get('/api/report', (_, response) => {
-  response.code(200).send(Rainfall.cached);
+  response.code(200).send(RainfallReport.cached);
 });
 
 server.listen(8081, (error, address) => {
