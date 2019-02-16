@@ -12,7 +12,7 @@ const Sensor = (props: SensorData) => {
   };
 
   return (
-    <div className='report'>
+    <main className='report'>
       <div className='location'>
         <span onClick={() => goToPoint(props.latitude, props.longitude)} className='point'>&#10005;</span>
         {props.name}
@@ -27,7 +27,7 @@ const Sensor = (props: SensorData) => {
         <Interval display={'1mo'} interval={'thirtyDays'} onClick={setInterval} />
         <Interval display={'12mo'} interval={'pastYear'} onClick={setInterval} />
       </ul>
-    </div>
+    </main>
   );
 };
 
