@@ -8,7 +8,6 @@ import { SensorData } from '../rainfall/types';
 import Header from './Header/Header';
 import About from './About/About';
 import Footer from './Footer/Footer';
-import { Helmet } from 'react-helmet';
 import './App.css';
 
 const App = () => {
@@ -39,7 +38,7 @@ const App = () => {
   };
 
   return (
-    <div className='App'>
+    <div className='app'>
       <Header goTo={setView}></Header>
       {views[view]}
       <Footer coords={position.coords}></Footer>

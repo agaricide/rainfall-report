@@ -9,8 +9,10 @@ interface IntervalProps {
 
 const Interval = React.memo((props: IntervalProps) => {
   return (
-    <li onClick={() => props.onClick(props.interval)}>
-      {props.display}
+    <li>
+      <a onClick={() => props.onClick(props.interval)}>
+        {props.display}
+      </a>
     </li>
   );
 });

@@ -20,4 +20,4 @@ const pollReport = () => {
 export {
   cached,
   pollReport
-}
+};

@@ -7,12 +7,12 @@ interface CTAProps {
 
 const CTA = React.memo((props: CTAProps) => {
   return (
-    <div className='cta'>
+    <section className='cta'>
       <p>
-        Use <span>gps</span> to find nearest <span>rainfall sensor</span>
+        Use <b>gps</b> to find nearest <b>rainfall sensor</b>
       </p>
       <button onClick={() => props.onClick()}>find sensor</button>
-    </div>
+    </section>
   );
 });
 
