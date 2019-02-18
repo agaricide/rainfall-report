@@ -9,9 +9,10 @@ import Header from './Header/Header';
 import About from './About/About';
 import Footer from './Footer/Footer';
 import './App.css';
+import  usePicoRouter, { Routes } from './usePicoRouter';
 
 const App = () => {
-  const [view, setView] = useState<string>('CTA');
+  const [route, setRoute] = usePicoRouter({ default: 'find' });
   const [position, getPosition] = useGeolocation();
   const [sensors, setSensors] = useState<SensorData[]>([]);
   const [nearest, setNearest] = useState<SensorData>({
@@ -25,22 +26,22 @@ const App = () => {
 
   const handleClick = async () => {
     await getPosition();
-    setView('Sensor');
+    setRoute('sensor');
   };
 
   const sensor = findNearestSensor(position.coords, sensors);
   if (sensor !== nearest) setNearest(sensor);
 
-  const views: { [key: string]: JSX.Element } = {
-    Sensor: <Sensor {...nearest}></Sensor>,
-    CTA: <CTA onClick={handleClick}></CTA>,
-    About: <About></About>
+  const routes: Routes = {
+    sensor: <Sensor {...nearest}></Sensor>,
+    find: <CTA onClick={handleClick}></CTA>,
+    about: <About></About>
   };
 
   return (
     <div className='app'>
-      <Header goTo={setView}></Header>
-      {views[view]}
+      <Header goTo={setRoute}></Header>
+      {routes[route]}
       <Footer coords={position.coords}></Footer>
     </div>
   );

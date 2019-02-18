@@ -8,16 +8,18 @@ interface HeaderProps {
 const Header = React.memo((props: HeaderProps) => {
   return (
     <header>
-      <a className='logo' onClick={() => props.goTo('CTA')}>Dallas Rain Report</a>
+      <a className='logo' onClick={() => props.goTo('find')}>
+        Dallas Rain Report
+      </a>
       <nav>
         <ul className='views'>
           <li>
-            <a onClick={() => props.goTo('CTA')}>
+            <a onClick={() => props.goTo('find')}>
               Report
             </a>
           </li>
           <li>
-            <a onClick={() => props.goTo('About')}>
+            <a onClick={() => props.goTo('about')}>
               About
             </a>
           </li>
