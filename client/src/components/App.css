@@ -11,3 +11,34 @@
   justify-content: center;
   opacity: .9;
 }
+
+@media (max-width: 599px) {
+  
+  .app {
+    color: red !important;
+  }
+}
+
+@media (min-width: 600px) { 
+  .app {
+    color: violet !important;
+  }
+}
+
+@media (min-width: 900px) {
+  .app {
+    color: blue !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .app {
+    color: green !important;
+  }
+}
+
+@media (min-width: 1800px) {
+  .app {
+    color: orange !important;
+  }
+}
