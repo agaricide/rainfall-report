@@ -1,10 +1,9 @@
 .about {
-    padding: 0 72px 0 56px;
+    padding: 184px 72px 0 56px;
     text-align: left;
     font-family: 'Source Code Pro', monospace;
     font-size: 22px;
     height: 100%;
-    padding-top: 280px;
     letter-spacing: -.1px;
 }
 
@@ -12,4 +11,14 @@
     font-size: 24px;
     font-weight: 400;
     font-family: 'Nidus Sans';
+}
+
+.about b span.tm {
+    font-family: 'Source Code Pro', monospace;
+    padding-left: 2px;
+}
+
+.about img {
+    margin: 8px 0px 0px;
+    width: 420px;
 }

@@ -3,6 +3,11 @@
     font-family: 'Source Code Pro', monospace;
     letter-spacing: -.2px;
     z-index: 1000;
+    cursor: pointer;
+}
+
+.location:hover {
+    text-decoration: underline;
 }
   
 .rainfall {
@@ -14,12 +19,6 @@
     z-index: 0;
     user-select: none;
     pointer-events: none;
-}
-
-.point {
-    font-size: 20px;
-    padding-right: 12px;
-    cursor: pointer;
 }
   
 .units {
@@ -57,4 +56,11 @@ ul.intervals li:hover {
 
 ul.intervals li:active {
     color: #ECEFF1;
+}
+
+.location img {
+    width: 24px;
+    margin-bottom: -4px;
+    padding-right: 8px;
+    cursor: pointer;
 }
