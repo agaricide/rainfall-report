@@ -9,7 +9,7 @@ import Header from './Header/Header';
 import About from './About/About';
 import Footer from './Footer/Footer';
 import './App.css';
-import  usePicoRouter, { Routes } from './usePicoRouter';
+import usePicoRouter, { Routes } from './usePicoRouter';
 
 const App = () => {
   const [route, setRoute] = usePicoRouter({ default: 'find' });
