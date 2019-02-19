@@ -5,6 +5,12 @@
     padding-top: 382px;
 }
 
+.cta h1 {
+    margin: 22px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
 .cta b {
     font-size: 24px;
     font-weight: 400;

@@ -31,9 +31,9 @@ const CTA = React.memo((props: CTAProps) => {
 
   return (
     <section className='cta'>
-      <p>
+      <h1>
         Use <b>gps</b> to find nearest <b>rainfall sensor</b>
-      </p>
+      </h1>
       <button onMouseDown={handleMouseDown}>
         {content[buttonState]}
       </button>
