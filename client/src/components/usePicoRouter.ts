@@ -25,7 +25,7 @@ const usePicoRouter = (config: RouterConfig): PicoRouterHook => {
   });
 
   const withHistory = (fn: Function) => (route: string) => {
-    history.pushState({ route }, `${route} page`, route);
+    history.pushState({ route }, `${route} page`, `#/${route}`);
     fn(route);
   };
 
