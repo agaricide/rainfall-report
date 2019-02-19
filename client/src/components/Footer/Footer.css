@@ -8,9 +8,16 @@ footer {
     align-items: center;
     font-family: 'Source Code Pro', monospace;
     padding: 0 0 0 80px;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 footer .coordinate {
     padding: 0 20px 0 0;
+    color: #1a2327;
+}
+
+footer img {
+    left: 4px;
+    top: 5px;
+    width: 28px;
 }

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { SensorData, RainfallInterval } from '../../rainfall/types';
 import Interval from './Interval';
 import './Sensor.css';
+import gps from '../../icons/gps/gps-2.svg';
 
 const Sensor = (props: SensorData) => {
   const [interval, setInterval] = useState<RainfallInterval>('sevenDays');
@@ -13,8 +14,10 @@ const Sensor = (props: SensorData) => {
 
   return (
     <main className='report'>
-      <div className='location'>
-        <span onClick={() => goToPoint(props.latitude, props.longitude)} className='point'>&#10005;</span>
+      <div className='location' onClick={() => goToPoint(props.latitude, props.longitude)}>
+        <span className='point'>
+          <img src={gps} />
+        </span>
         {props.name}
       </div>
       <div className='rainfall'>

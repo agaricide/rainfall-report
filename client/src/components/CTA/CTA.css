@@ -12,9 +12,10 @@
 }
 
 .cta button {
+    position: relative;
     border: none;
     background-color: transparent;
-    padding: 8px;
+    padding: 8px 8px 8px 40px;
     margin: 12px;
     font-size: 20px;
     font-family: 'Source Code Pro', monospace;
@@ -32,4 +33,27 @@
 .cta button:active {
     color:  #ECEFF1;
     border-color: #ECEFF1;
+}
+
+svg {
+    fill: #ECEFF1 !important;
+}
+
+.cta button img {
+    fill: #ECEFF1 !important;
+    position: absolute;
+    left: 4px;
+    top: 5px;
+    width: 32px;
+}
+
+
+.cta button img.loading {
+    animation: rotate 2s infinite steps(4);
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateZ(360deg);
+    }
 }

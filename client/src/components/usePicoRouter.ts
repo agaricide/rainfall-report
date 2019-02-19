@@ -14,7 +14,7 @@ const usePicoRouter = (config: RouterConfig): PicoRouterHook => {
   const [route, setRoute] = useState<string>(config.default);
 
   const handleBack = (event: PopStateEvent) => {
-    setRoute(event.state.route);
+    if (event.state) setRoute(event.state.route);
   };
 
   useEffect(() => {

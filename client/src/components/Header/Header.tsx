@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import gps from '../../icons/gps/gps-1.svg';
 
 interface HeaderProps {
   goTo: (view: string) => any;
