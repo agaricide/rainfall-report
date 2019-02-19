@@ -8,7 +8,6 @@
 }
 
 .about b {
-    font-size: 24px;
     font-weight: 400;
     font-family: 'Nidus Sans';
 }
@@ -18,7 +17,44 @@
     padding-left: 2px;
 }
 
-.about img {
+.about .logo {
     margin: 8px 0px 0px;
     width: 420px;
+}
+
+/* phones */
+@media (max-width: 599px) {
+    .about {
+        font-size: 12px;
+    }
+    .about .logo {
+        width: 100%;
+    }
+}
+
+/* tablets */
+@media (min-width: 600px) {
+    .about {
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 420px;
+    }
+}
+
+/* small desktop windows */
+@media (min-width: 900px) {
+    .about {
+        font-size: 22px;
+    }
+}
+
+/* standard max-size desktop windows */
+@media (min-width: 1200px) {
+}
+
+/* desk workstations */
+@media (min-width: 1800px) {
+    
 }

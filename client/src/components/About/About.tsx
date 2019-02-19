@@ -25,7 +25,7 @@ const About = React.memo(() => {
         of <b>the Citizen</b>.
       </p>
       <a href={GH}>
-        <img src={agar} />
+        <img className='logo' src={agar} />
       </a>
     </section>
   );
