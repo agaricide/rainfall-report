@@ -15,24 +15,56 @@ header {
     font-size: 40px;
 }
 
-ul.views {
+.views {
     padding: 2px 0 0 24px;
     font-size: 24px;
     margin: 0;
     list-style: none;
 }
   
-ul.views li {
+.views li {
     display: inline;
     padding-right: 20px;
     cursor: pointer;
 }
 
-ul.views li:hover {
+.views li:hover {
     text-decoration: underline;
 }
 
-ul.views li:active {
+.views li:active {
     color: #ECEFF1;
     user-select: none;
+}
+
+/* phones */
+@media (max-width: 599px) {
+    header {
+        /* 108 */
+        padding: 16px 0 0 48px;
+    }
+    .views {
+        font-size: 14px;
+        text-decoration: underline;
+    }
+    .logo {
+        font-size: 20px;
+    }
+}
+
+/* tablets */
+@media (min-width: 600px) { 
+
+}
+
+/* small desktop windows */
+@media (min-width: 900px) {
+}
+
+/* standard max-size desktop windows */
+@media (min-width: 1200px) {
+}
+
+/* desk workstations */
+@media (min-width: 1800px) {
 }

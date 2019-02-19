@@ -12,33 +12,37 @@
   opacity: .9;
 }
 
+/* phones */
 @media (max-width: 599px) {
-  
   .app {
-    color: red !important;
+    /* color: red !important; */
   }
 }
 
+/* tablets */
 @media (min-width: 600px) { 
   .app {
-    color: violet !important;
+    /* color: violet !important; */
   }
 }
 
+/* small desktop windows */
 @media (min-width: 900px) {
   .app {
-    color: blue !important;
+    /* color: blue !important; */
   }
 }
 
+/* standard max-size desktop windows */
 @media (min-width: 1200px) {
   .app {
-    color: green !important;
+    /* color: green !important; */
   }
 }
 
+/* desk workstato */
 @media (min-width: 1800px) {
   .app {
-    color: orange !important;
+    /* color: orange !important; */
   }
 }

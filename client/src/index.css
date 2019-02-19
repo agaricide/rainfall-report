@@ -7,6 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
+  /* position: relative; */
 }
 
 code {
@@ -20,4 +21,5 @@ code {
   bottom: -5%;
   min-height: 110%;
   min-width: 110%;
+  overflow: hidden;
 }
