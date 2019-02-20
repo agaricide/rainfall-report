@@ -17,22 +17,18 @@
 }
 
 .gutter {
-  padding: 16px;
   height: 100%;
 }
 
 /* phones */
 @media (max-width: 599px) {
-  .app {
-    color: red !important;
+  .gutter {
+    padding: 16px;
   }
 }
 
 /* tablets */
 @media (min-width: 600px) { 
-  .app {
-    color: violet !important;
-  }
   .gutter {
     padding: 16px 32px;
   }
@@ -40,16 +36,11 @@
 
 /* small desktop windows */
 @media (min-width: 900px) {
-  .app {
-    color: blue !important;
-  }
+
 }
 
 /* standard max-size desktop windows */
 @media (min-width: 1200px) {
-  .app {
-    color: green !important;
-  }
   .gutter {
     padding: 16px 48px;
   }
@@ -57,7 +48,5 @@
 
 /* desk workstato */
 @media (min-width: 1800px) {
-  .app {
-    color: orange !important;
-  }
+
 }
