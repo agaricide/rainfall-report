@@ -1,10 +1,10 @@
 .about {
-    padding: 184px 72px 0 56px;
     text-align: left;
     font-family: 'Source Code Pro', monospace;
     font-size: 22px;
-    height: 100%;
     letter-spacing: -.1px;
+    margin: 108px 16px 16px;
+    height: 100%;
 }
 
 .about b {

@@ -5,7 +5,6 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 16px 0 0 108px;
     font-family: 'Nidus Sans';
     cursor: pointer;
 }
@@ -39,10 +38,6 @@ header {
 
 /* phones */
 @media (max-width: 599px) {
-    header {
-        /* 108 */
-        padding: 16px 0 0 48px;
-    }
     .views {
         font-size: 14px;
         text-decoration: underline;
