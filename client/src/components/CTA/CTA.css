@@ -9,6 +9,18 @@
     font-weight: 500;
 }
 
+.cta p {
+    margin: 22px;
+}
+
+.cta .link {
+    cursor: pointer;
+}
+
+.cta .link:hover {
+    text-decoration: underline;
+}
+
 .cta b {
     font-size: 24px;
     font-weight: 400;
@@ -61,9 +73,6 @@
 
 /* phones */
 @media (max-width: 599px) {
-    .cta h1 {
-
-    }
     .cta button  {
         padding: 8px 8px 8px 36px;
         font-size: 18px;
@@ -73,6 +82,9 @@
     }
     .cta button img {
         width: 27px;
+    }
+    .cta p {
+        font-size: 14px;
     }
 }
 
@@ -88,6 +100,9 @@
     .cta button img {
         width: 32px;
     }
+    .cta p {
+        font-size: 14px;
+    }
 }
 
 /* small desktop windows */
@@ -102,6 +117,9 @@
     }
     .cta button img {
         width: 34px;
+    }
+    .cta p {
+        font-size: 16px;
     }
 }
 
@@ -125,6 +143,9 @@
     }
     .cta button img {
         width: 35px;
+    }
+    .cta p {
+        font-size: 16px;
     }
 }
 

@@ -5,6 +5,7 @@ import gpsClicked from '../../icons/gps/gps-3.svg';
 
 interface CTAProps {
     onClick: Function;
+    goTo: (view: string) => any;
 }
 
 type ButtonStates = 'untouched' | 'active' | 'loading';
@@ -32,11 +33,16 @@ const CTA = React.memo((props: CTAProps) => {
   return (
     <section className='cta'>
       <h1>
-        Use <b>gps</b> to find nearest <b>rainfall sensor</b>
+        Use <b>gps</b> to find nearest <a className='link' onClick={() => props.goTo('about')}>
+          <b>rainfall sensor</b>&#185;
+        </a>
       </h1>
       <button onMouseDown={handleMouseDown}>
         {content[buttonState]}
       </button>
+      <p>
+        Real-time from over 60 sensors in Dallas, TX
+      </p>
     </section>
   );
 });

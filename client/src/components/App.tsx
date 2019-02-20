@@ -34,7 +34,7 @@ const App = () => {
 
   const routes: Routes = {
     sensor: <Sensor {...nearest}></Sensor>,
-    find: <CTA onClick={handleClick}></CTA>,
+    find: <CTA onClick={handleClick} goTo={setRoute}></CTA>,
     about: <About></About>
   };
 
