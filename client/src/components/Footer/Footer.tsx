@@ -9,12 +9,11 @@ interface FooterProps {
 const Footer = React.memo((props: FooterProps) => {
   return (
     <footer>
-      {/* <img src={gps} /> */}
       <span className='coordinate latitude'>
-        {props.coords.latitude || '0.00'}
+        {props.coords.latitude.toFixed(10)}
       </span>
       <span className='coordinate latitude'>
-        {props.coords.longitude || '0.00'}
+        {props.coords.longitude.toFixed(10)}
       </span>
     </footer>
   );
