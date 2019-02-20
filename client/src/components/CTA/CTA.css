@@ -1,8 +1,6 @@
 .cta {
     font-family: 'Source Code Pro', monospace;
-    font-size: 22px;
-    height: 100%;
-    padding-top: 382px;
+    letter-spacing: -.2px;
 }
 
 .cta h1 {
@@ -18,6 +16,7 @@
 }
 
 .cta button {
+    letter-spacing: none;
     position: relative;
     border: none;
     background-color: transparent;
@@ -41,12 +40,7 @@
     border-color: #ECEFF1;
 }
 
-svg {
-    fill: #ECEFF1 !important;
-}
-
 .cta button img {
-    fill: #ECEFF1 !important;
     position: absolute;
     left: 4px;
     top: 5px;
@@ -62,4 +56,79 @@ svg {
     100% {
         transform: rotateZ(360deg);
     }
+}
+
+
+/* phones */
+@media (max-width: 599px) {
+    .cta h1 {
+
+    }
+    .cta button  {
+        padding: 8px 8px 8px 36px;
+        font-size: 18px;
+    }
+    .cta b {
+        font-size: 21px;
+    }
+    .cta button img {
+        width: 27px;
+    }
+}
+
+/* tablets */
+@media (min-width: 600px) {
+    .cta h1 {
+        font-size: 22px;
+    }
+    .cta button {
+        font-size: 22px;
+        padding: 8px 8px 8px 42px;
+    }
+    .cta button img {
+        width: 32px;
+    }
+}
+
+/* small desktop windows */
+@media (min-width: 900px) {
+    .cta h1,
+    .cta button {
+        font-size: 24px;
+    }
+    .cta button {
+        letter-spacing: -.2px;
+        padding: 8px 8px 8px 42px;
+    }
+    .cta button img {
+        width: 34px;
+    }
+}
+
+/* standard max-size desktop windows */
+@media (min-width: 1200px) {
+    .cta h1 {
+        font-size: 26px;
+        letter-spacing: -.2px;
+    }
+    .cta b {
+        font-size: 28px;
+    }
+    .cta button {
+        letter-spacing: -.2px;
+        padding: 10px 10px 10px 46px;
+    }
+    .cta button img {
+        left: 6px;
+        top: 7px;
+        width: 34px;
+    }
+    .cta button img {
+        width: 35px;
+    }
+}
+
+/* desk workstations */
+@media (min-width: 1800px) {
+
 }

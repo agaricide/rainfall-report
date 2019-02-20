@@ -6,7 +6,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 code {
@@ -15,9 +16,20 @@ code {
 }
 
 #background {
+  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  height: calc(100%);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#background video  {
   position: absolute;
   right: -5%;
   bottom: -5%;
-  min-height: 110%;
   min-width: 110%;
+  min-height: 110%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }

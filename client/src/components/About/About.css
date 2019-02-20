@@ -1,14 +1,13 @@
 .about {
-    padding: 184px 72px 0 56px;
     text-align: left;
     font-family: 'Source Code Pro', monospace;
     font-size: 22px;
+    letter-spacing: -.2px;
+    margin: 108px 0px 0px;
     height: 100%;
-    letter-spacing: -.1px;
 }
 
 .about b {
-    font-size: 24px;
     font-weight: 400;
     font-family: 'Nidus Sans';
 }
@@ -18,7 +17,48 @@
     padding-left: 2px;
 }
 
-.about img {
+.about .signature {
     margin: 8px 0px 0px;
     width: 420px;
+}
+
+/* phones */
+@media (max-width: 599px) {
+    .about {
+        font-size: 17px;
+    }
+    .about .signature {
+        width: 100%;
+    }
+}
+
+/* tablets */
+@media (min-width: 600px) {
+    .about {
+        font-size: 18px;
+    }
+    .signature {
+        width: 420px;
+    }
+}
+
+/* small desktop windows */
+@media (min-width: 900px) {
+    .about {
+        font-size: 20px;
+    }
+}
+
+/* standard max-size desktop windows */
+@media (min-width: 1200px) {
+    .about {
+        font-size: 26px;
+        letter-spacing: -.3px;
+
+    }
+}
+
+/* desk workstations */
+@media (min-width: 1800px) {
+
 }

@@ -26,7 +26,7 @@ const CTA = React.memo((props: CTAProps) => {
   const content: { [key: string]: JSX.Element } = {
     untouched: <span><img src={gps} /> find sensor</span>,
     active: <span><img src={gpsClicked} /> find sensor</span>,
-    loading: <span><img className='loading' src={gps} /> find sensor</span>
+    loading: <span><img className='loading' src={gps} /> finding...</span>
   };
 
   return (
