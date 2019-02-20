@@ -40,9 +40,13 @@ const App = () => {
 
   return (
     <div className='app'>
-      <Header goTo={setRoute}></Header>
-      {routes[route]}
-      <Footer coords={position.coords}></Footer>
+      <div className='gutter'>
+        <Header goTo={setRoute}></Header>
+        <div className='content'>
+          {routes[route]}
+        </div>
+        <Footer coords={position.coords}></Footer>
+      </div>
     </div>
   );
 };

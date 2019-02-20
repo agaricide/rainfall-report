@@ -33,10 +33,6 @@ ul.intervals {
     margin: 0;
     list-style: none;
 }
-
-ul.intervals.wide {
-    letter-spacing: 2px;
-}
   
 ul.intervals li {
     font-size: 28px;
@@ -45,11 +41,6 @@ ul.intervals li {
     cursor: pointer;
 }
 
-ul.intervals li.heavy {
-    font-size: 24px;
-    font-weight: 700;
-}
-  
 ul.intervals li:hover {
     text-decoration: underline;
 }
@@ -63,4 +54,70 @@ ul.intervals li:active {
     margin-bottom: -4px;
     padding-right: 8px;
     cursor: pointer;
+}
+
+/* phones */
+@media (max-width: 599px) {
+    .rainfall {
+        font-size: 90px;
+        line-height: 88px;
+        padding: 24px 0 12px;
+    }
+
+    .units {
+        font-size: 40px;
+    }
+
+    .location,
+    ul.intervals li {
+        font-size: 22px;
+    }
+}
+
+/* tablets */
+@media (min-width: 600px) {
+    .rainfall {
+        font-size: 108px;
+        padding: 24px 0 12px;
+    }
+
+    .units {
+        font-size: 40px;
+    }
+
+    .location,
+    ul.intervals li {
+        font-size: 24px;
+    }
+}
+
+/* small desktop windows */
+@media (min-width: 900px) {
+    .rainfall {
+        font-size: 158px;
+        padding: 36px 0 24px;
+    }
+
+    .units {
+        font-size: 90px;
+    }
+
+    .location,
+    ul.intervals li {
+        font-size: 24px;
+    }
+}
+
+/* standard max-size desktop windows */
+@media (min-width: 1200px) {
+    .rainfall {
+        font-size: 172px;
+        line-height: 90px;
+        padding: 40px 0 28px;
+    }
+}
+
+/* desk workstations */
+@media (min-width: 1800px) {
+
 }
