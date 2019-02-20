@@ -8,15 +8,40 @@ footer {
     align-items: center;
     font-family: 'Source Code Pro', monospace;
     font-size: 26px;
+    letter-spacing: -.1px;
 }
 
 footer .coordinate {
-    padding: 0 20px 0 0;
+    padding: 0 16px 0 0;
     color: #1a2327;
 }
 
-footer img {
-    left: 4px;
-    top: 5px;
-    width: 28px;
+/* phones */
+@media (max-width: 599px) {
+    footer {
+        font-size: 20px;
+    }
+}
+
+/* tablets */
+@media (min-width: 600px) {
+    
+}
+
+/* small desktop windows */
+@media (min-width: 900px) {
+    footer {
+        font-size: 24px;
+    }
+}
+
+/* standard max-size desktop windows */
+@media (min-width: 1200px) {
+    footer {
+        font-size: 26px;
+    }
+}
+
+/* desk workstations */
+@media (min-width: 1800px) {
 }
