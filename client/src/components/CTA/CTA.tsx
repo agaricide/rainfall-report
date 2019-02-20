@@ -34,7 +34,7 @@ const CTA = React.memo((props: CTAProps) => {
     <section className='cta'>
       <h1>
         Use <b>gps</b> to find nearest <a className='link' onClick={() => props.goTo('about')}>
-          <b>rainfall sensor</b>&#185;
+          <b>rainfall sensor</b>
         </a>
       </h1>
       <button onMouseDown={handleMouseDown}>
