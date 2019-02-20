@@ -19,7 +19,7 @@ code {
   width: 100vh;
   min-width: 100vh;
   min-height: calc(100vh + 56px);
-  height: calc(100vh + 56x);
+  height: calc(100vh + 56px);
   overflow-x: hidden;
   overflow-y: hidden;
 }
