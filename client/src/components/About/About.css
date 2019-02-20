@@ -17,7 +17,7 @@
     padding-left: 2px;
 }
 
-.about .logo {
+.about .signature {
     margin: 8px 0px 0px;
     width: 420px;
 }
@@ -27,7 +27,7 @@
     .about {
         font-size: 12px;
     }
-    .about .logo {
+    .about .signature {
         width: 100%;
     }
 }
@@ -38,7 +38,7 @@
         font-size: 18px;
     }
 
-    .logo {
+    .signature {
         width: 420px;
     }
 }

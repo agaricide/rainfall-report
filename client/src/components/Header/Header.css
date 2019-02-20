@@ -7,15 +7,16 @@ header {
     align-items: center;
     font-family: 'Nidus Sans';
     cursor: pointer;
+    letter-spacing: -1px;
 }
 
 .logo {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 32px;
 }
 
 .views {
-    padding: 2px 0 0 24px;
+    padding: 2px 0 0 16px;
     font-size: 24px;
     margin: 0;
     list-style: none;
@@ -23,7 +24,7 @@ header {
   
 .views li {
     display: inline;
-    padding-right: 20px;
+    padding-right: 16px;
     cursor: pointer;
 }
 
@@ -38,28 +39,52 @@ header {
 
 /* phones */
 @media (max-width: 599px) {
-    .views {
-        font-size: 14px;
-        text-decoration: underline;
-    }
     .logo {
         font-size: 20px;
+    }
+    .views {
+        font-size: 16px;
+        text-decoration: underline;
     }
 }
 
 /* tablets */
 @media (min-width: 600px) { 
-
+    .logo {
+        font-size: 26px;
+    }
+    .views {
+        font-size: 18px;
+        text-decoration: underline;
+    }
 }
 
 /* small desktop windows */
 @media (min-width: 900px) {
+    .logo {
+        font-size: 32px;
+    }
+    .views {
+        font-size: 24px;
+        text-decoration: none;
+    }
 }
 
 /* standard max-size desktop windows */
 @media (min-width: 1200px) {
+    .logo {
+        font-size: 36px;
+    }
+    .views {
+        font-size: 24px;
+        text-decoration: none;
+    }
 }
 
 /* desk workstations */
+/* TODO */
 @media (min-width: 1800px) {
+    .logo {
+    
+    }
 }
