@@ -29,6 +29,6 @@ code {
   position: fixed;
   right: -5%;
   bottom: -5%;
-  min-width: 110vh;
+  min-width: 110vw;
   min-height: 110vh;
 }
