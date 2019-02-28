@@ -2,6 +2,7 @@ import * as fastify from 'fastify';
 import * as helmet from 'fastify-helmet';
 import { IncomingMessage, Server, ServerResponse } from 'http';
 import * as RainfallReport from './pollReport';
+
 RainfallReport.pollReport();
 
 const helmetConfig: helmet.FastifyHelmetOptions = {
