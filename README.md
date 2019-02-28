@@ -1,6 +1,6 @@
 # Dallas Rain Report
 ## About
-A minimal React app built using the free [Rainfall Report](https://www.dallasopendata.com/Environment/Rainfall-Report/jus4-wys9) from [Dallas OpenData.](https://www.dallasopendata.com/stories/s/eez6-mypp/)  The Rainfall Report provides data from 61 sensors throughout Dallas.  Hosted on a [Raspberry Pi](https://github.com/agaricide/pi-app-env) from within the city.
+A minimal React [app](https://www.dallasrain.report/) built using the free [Rainfall Report](https://www.dallasopendata.com/Environment/Rainfall-Report/jus4-wys9) from [Dallas OpenData.](https://www.dallasopendata.com/stories/s/eez6-mypp/)  The Rainfall Report provides data from 61 sensors throughout Dallas.  Hosted on a [Raspberry Pi](https://github.com/agaricide/pi-app-env) from within the city.
 
 ## Goals
 - to bring attention to Dallas' fantastic OpenData initiative and encourage other citizens to use it
